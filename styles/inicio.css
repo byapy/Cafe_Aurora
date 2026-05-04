@@ -1,4 +1,6 @@
-
+main{
+    margin: 10px;
+}
 body{
     margin: 0;
 }
@@ -9,12 +11,17 @@ body{
     flex-direction: row;
     align-items: center;
 }
+.logo p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
 .logo img{
     width: 100px;
     object-fit: cover;
 }
 .headerNav{
-    height: 4.5rem;
+    max-height: 4.5rem;
     width: 100%;
     margin: 0;
     background-color: #CB7885;
@@ -22,6 +29,7 @@ body{
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    overflow: hidden;
     
 }
 .botonVinculos{
@@ -31,28 +39,253 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .botonVinculos a{
+    padding: 10px;
+    max-height: 100%;
+    color: #F2F0EB;
     text-decoration: none;
     font-size: 1.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.botonVinculos a:hover{
+    background-color: #893941;
+    border-radius: 8px;
+
+}
 
 .footerIni{
     background-color: #CB7885;
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
 }
 .footerIni h2{
     font-family: Arial, Helvetica, sans-serif;
     
 }
 .logo-footer{
+    padding: 10x;
     width: 150px;
+    margin: 0;
 }
 .logo-footer img{
     width: 100%;
+}
+
+
+
+
+.header-main{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px 20px 0px 0px;
+}
+.banner-cafe{
+    display: block;
+    object-fit: cover;
+    max-height: 450px;
+    width: 80%;
+    padding: 0%;
+}
+.box-imagen{
+    display: block;
+    width: 20%;
+    object-fit: cover;
+}
+
+
+.title-main{
+    display: flex;
+    justify-content: center;
+    background-color: #D4D994;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.content-main{
+    margin-top: 20px;
+    /*/ background-color: #cb788488; /*/
+    border-radius: 20px;
+
+}
+
+.logros-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    justify-items: center;
+    gap: 10px;
+}
+
+.reconocimiento{
+    text-align: center;
+    color: #F2F0EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CB7885;
+    max-width: 400px;
+    max-height: auto;
+    padding: 10px;
+    border: 3px white solid;
+    border-radius: 20px;
+}
+
+.calidad-cafe{
+    text-align: center;
+    color: #F2F0EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #893941;
+    max-width: 400px;
+    max-height: auto;
+    padding: 10px;
+    border: 3px white solid;
+    border-radius: 20px;
+}
+
+
+.tiendas{
+    text-align: center;
+    max-height: aut;
+    color: #F2F0EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CB7885;
+    max-width: 400px;
+    padding: 10px;
+    border: 3px white solid;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/* PAGINA QUIENES SOMOS */
+.contenido{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
+    border-radius: 25px;
+}
+
+.contenido::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://wallpaperbat.com/img/182513217-how-to-store-coffee-beans-the-right-way-appetit-bon-appetit.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    z-index: -1;
+    transform: scale(1.1); 
+}
+
+.quienesSomos{
+    position: relative;
+    background-color: #F2F0EB;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+.cards-personal-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+    justify-items: center;
+;
+}
+.card-personal{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    text-align: center;
+}
+.fotos-perfil{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    border-radius: 70px;
+}
+
+
+
+
+@media (max-width: 980px){
+    .logo{
+        display: none;
+    }
+    .headerNav{
+        justify-content: center;
+    }
+    .cards-personal-contenedor{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+@media (max-width: 870px){
+    .logros-main{
+        grid-template-columns: 1fr 1fr;
+    }
+    .botonVinculos{
+        flex-wrap: wrap;
+    }
+    .headerNav{
+        max-height: 800px;
+    }
+}
+
+@media (max-width: 580px){
+    .logros-main{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-self: center;
+        align-items: center;
+    }
+    .cards-personal-contenedor{
+        grid-template-columns: 1fr;
+    }
+    .box-imagen{
+        display: none;
+        
+    }
+    .banner-cafe{
+        width: 100%;
+    }
+
+
 }
