@@ -116,4 +116,66 @@ body {
     margin-top: 20px;
     font-size: 0.9rem;
     opacity: 0.7;
-}
+}
+
+/* Accordion Styles */
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 15px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-button {
+    background-color: var(--aurora-white);
+    color: var(--aurora-maroon);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--aurora-maroon);
+    color: var(--aurora-white);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--aurora-maroon);
+}
+
+.accordion-button::after {
+    filter: sepia(100%) saturate(200%) hue-rotate(-50deg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-body {
+    background-color: #fffaf5;
+    padding: 25px;
+}
+
+.menu-item-img {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.price-tag {
+    background-color: var(--aurora-maroon);
+    color: var(--aurora-white);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.accordion-button:not(.collapsed) .price-tag {
+    background-color: var(--aurora-white);
+    color: var(--aurora-maroon);
+}
+

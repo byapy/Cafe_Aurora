@@ -58,66 +58,192 @@
         <div class="text-center">
             <h1 class="display-4 fw-bold mb-4">Nuestro Menú</h1>
         </div>
-        <div class="row">
-            <div class="col-4">
-                <h3 class="fs-4">Bebidas Calientes</h3>
-                <div id="list-example" class="list-group">
-                    <a class="list-group-item list-group-item-action" href="#list-item-1">Espresso Q12</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-2">Americano Q15</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-3">Capuccino Q18</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-4">Latte Q22</a>
-                </div>
-            </div>
-            <div class="col-8">
-                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
-                    class="scrollspy-example" tabindex="0">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="imagenes/espresso.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title" id="list-item-1">Espresso - Gota de Rocío</h5>
-                                    <p class="card-text">
-                                        Intenso y puro, como el primer rocío del amanecer.
-                                    </p>
-
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="text-center">Bebidas Calientes</h3>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="accordion accordion-flush" id="menuAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Espresso - Gota de Rocío <span class="price-tag">Q12</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#menuAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 text-center">
+                                                    <img src="imagenes/espresso.jpg"
+                                                        class="img-fluid menu-item-img mb-3 mb-md-0" alt="Espresso">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="lead mb-0">Intenso y puro, como el primer rocío del
+                                                        amanecer.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="imagenes/espresso.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title" id="list-item-1">Americano - Bruma del Lago</h5>
-                                    <p class="card-text">
-                                        Ligero y tranquilo, como agua en calma.
-                                    </p>
-
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Americano - Bruma del Lago <span class="price-tag">Q15</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#menuAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 text-center">
+                                                    <img src="imagenes/americano.jpg"
+                                                        class="img-fluid menu-item-img mb-3 mb-md-0" alt="Americano">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="lead mb-0">Ligero y tranquilo, como agua en calma.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="imagenes/espresso.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title" id="list-item-1">Capuccino - Nube de Pétalos</h5>
-                                    <p class="card-text">
-                                        Cremoso y delicado, con espuma suave como flores.
-                                    </p>
-
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Capuccino - Nube de Pétalos <span class="price-tag">Q18</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#menuAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 text-center">
+                                                    <img src="imagenes/capuccino.jpg"
+                                                        class="img-fluid menu-item-img mb-3 mb-md-0" alt="Capuccino">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="lead mb-0">Cremoso y delicado, con espuma suave como
+                                                        flores.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Latte - Amanecer de Algodón <span class="price-tag">Q22</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#menuAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 text-center">
+                                                    <img src="imagenes/latte.jpg"
+                                                        class="img-fluid menu-item-img mb-3 mb-md-0" alt="Latte">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="lead mb-0">Suave y acogedor, como nubes al despertar.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            Mocha - Hechizo de Medianoche <span class="price-tag">Q24</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#menuAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 text-center">
+                                                    <img src="imagenes/mocha.jpg"
+                                                        class="img-fluid menu-item-img mb-3 mb-md-0" alt="Mocha">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="lead mb-0">Café y chocolate con un toque mágico profundo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix">
+                                            Chocolate Caliente - Abrazo Encantado <span class="price-tag">Q20</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSix" data-bs-parent="#menuAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 text-center">
+                                                    <img src="imagenes/chocolate.jpg"
+                                                        class="img-fluid menu-item-img mb-3 mb-md-0" alt="Chocolate">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="lead mb-0">Cálido, dulce y reconfortante como un cuento de
+                                                        hadas.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSeven">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                            aria-expanded="false" aria-controls="collapseSeven">
+                                            Té - Susurro del Jardín <span class="price-tag">Q14</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSeven" data-bs-parent="#menuAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4 text-center">
+                                                    <img src="imagenes/te.jpg"
+                                                        class="img-fluid menu-item-img mb-3 mb-md-0" alt="Té">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="lead mb-0">Infusión aromática con esencia natural y
+                                                        relajante.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-6">
+                    <h3 class="text-center">Bebidas Frias</h3>
+                </div>
+
             </div>
+
         </div>
+
+
     </main>
 
     <footer class="footer-aurora">
