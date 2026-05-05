@@ -22,7 +22,8 @@ body {
 }
 
 .logo-cafe {
-    height: 80px; /* Tamaño mediano */
+    height: 80px;
+    /* Tamaño mediano */
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -162,7 +163,7 @@ body {
 
 .menu-item-img {
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .price-tag {
@@ -178,4 +179,7 @@ body {
     background-color: var(--aurora-white);
     color: var(--aurora-maroon);
 }
-
+
+.justify-text {
+    text-align: justify;
+}
